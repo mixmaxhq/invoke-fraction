@@ -1,0 +1,54 @@
+{
+  "name": "@mixmaxhq/invoke-fraction",
+  "version": "1.0.0",
+  "description": "Partition invocations across a set of functions based on defined fractions.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist/node",
+    "lint": "npm run check",
+    "check": "eslint . && flow",
+    "test": "npm run check && npm run build && jest",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mixmaxhq/invoke-fraction.git"
+  },
+  "keywords": [
+    "invoke",
+    "fraction",
+    "traffic",
+    "partition",
+    "call",
+    "invocation",
+    "percentage",
+    "routing"
+  ],
+  "files": [
+    "src",
+    "dest"
+  ],
+  "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mixmaxhq/invoke-fraction/issues"
+  },
+  "homepage": "https://github.com/mixmaxhq/invoke-fraction#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.1.0",
+    "eslint-config-mixmax": "^1.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "flow-bin": "^0.76.0",
+    "jest": "^23.4.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/dist/node/**"
+    ]
+  }
+}

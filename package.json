@@ -8,6 +8,7 @@
     "lint": "npm run check",
     "check": "eslint . && flow",
     "test": "npm run check && npm run build && jest",
+    "ci": "npm run test",
     "prepublishOnly": "npm run build"
   },
   "repository": {

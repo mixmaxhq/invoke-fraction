@@ -27,7 +27,7 @@
   ],
   "files": [
     "src",
-    "dest"
+    "dist"
   ],
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
   "license": "MIT",

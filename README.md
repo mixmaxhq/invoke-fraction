@@ -1,6 +1,8 @@
 invoke-fraction
 ===============
 
+[![Build Status](https://travis-ci.com/mixmaxhq/invoke-fraction.svg?token=TcwK43uDe2DuFv6zy5Kb&branch=master)](https://travis-ci.com/mixmaxhq/invoke-fraction)
+
 Partition invocations across a set of functions based on defined fractions.
 
 ### Example

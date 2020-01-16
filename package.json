@@ -5,10 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist/node",
-    "lint": "npm run check",
-    "check": "eslint . && flow",
-    "test": "npm run check && npm run build && jest",
-    "ci": "npm run test",
+    "lint": "eslint . && flow",
+    "test": "npm run build && jest",
+    "ci": "npm run lint && npm test",
     "prepublishOnly": "npm run build"
   },
   "repository": {

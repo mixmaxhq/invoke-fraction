@@ -42,8 +42,12 @@ type Handlers<T> = Array<Handler<T>>;
  * @return {T} The result of calling the randomly selected partition.
  * @throws {TypeError} If the no handler is enabled, and no default handler is provided.
  */
-function partitionFraction<T>(handlers: Handlers<T>, defaultHandler: ?HandlerFunction<T> = null): T {
-  let key = Math.random(), lastValid = null;
+function partitionFraction<T>(
+  handlers: Handlers<T>,
+  defaultHandler: ?HandlerFunction<T> = null
+): T {
+  let key = Math.random(),
+    lastValid = null;
 
   for (const [fraction, handler] of handlers) {
     // Disabled.

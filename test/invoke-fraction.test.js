@@ -27,29 +27,36 @@ describe('invokeFraction', () => {
 
   it('should invoke an enabled handler', () => {
     const disabledHandler = jest.fn().mockImplementation(tosser());
-    const enabledHandler = jest.fn()
+    const enabledHandler = jest
+      .fn()
       .mockReturnValueOnce('good1')
       .mockReturnValueOnce('good2')
       .mockReturnValueOnce('good3');
-    expect(invokeFraction([
-      [0, disabledHandler],
-      [0, disabledHandler],
-      [1, enabledHandler],
-      [0, disabledHandler],
-    ])).toBe('good1');
-    expect(invokeFraction([
-      [0, disabledHandler],
-      [0, disabledHandler],
-      [1e-10, enabledHandler],
-      [0, disabledHandler],
-    ])).toBe('good2');
-    expect(invokeFraction([
-      [0, disabledHandler],
-      [0, disabledHandler],
-      [1e-10, enabledHandler],
-      [0, disabledHandler],
-      [1, enabledHandler],
-    ])).toBe('good3');
+    expect(
+      invokeFraction([
+        [0, disabledHandler],
+        [0, disabledHandler],
+        [1, enabledHandler],
+        [0, disabledHandler],
+      ])
+    ).toBe('good1');
+    expect(
+      invokeFraction([
+        [0, disabledHandler],
+        [0, disabledHandler],
+        [1e-10, enabledHandler],
+        [0, disabledHandler],
+      ])
+    ).toBe('good2');
+    expect(
+      invokeFraction([
+        [0, disabledHandler],
+        [0, disabledHandler],
+        [1e-10, enabledHandler],
+        [0, disabledHandler],
+        [1, enabledHandler],
+      ])
+    ).toBe('good3');
 
     expect(enabledHandler.mock.calls).toEqual([[], [], []]);
   });

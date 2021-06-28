@@ -1,8 +1,10 @@
-const invokeFraction = require('../src');
+import invokeFraction from '../src';
 
-const tosser = (err = new Error('should not be called')) => () => {
-  throw err;
-};
+const tosser =
+  (err = new Error('should not be called')) =>
+  () => {
+    throw err;
+  };
 
 describe('invokeFraction', () => {
   it('should invoke the default handler', () => {

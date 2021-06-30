@@ -1,5 +1,3 @@
-// @flow
-
 type HandlerFunction<T> = () => T;
 type Handler<T> = [number, HandlerFunction<T>];
 type Handlers<T> = Array<Handler<T>>;
@@ -44,7 +42,7 @@ type Handlers<T> = Array<Handler<T>>;
  */
 function partitionFraction<T>(
   handlers: Handlers<T>,
-  defaultHandler: ?HandlerFunction<T> = null
+  defaultHandler: HandlerFunction<T> | null | undefined = null
 ): T {
   let key = Math.random(),
     lastValid = null;
@@ -73,4 +71,4 @@ function partitionFraction<T>(
   throw new TypeError('received no enabled handlers');
 }
 
-module.exports = partitionFraction;
+export default partitionFraction;

@@ -2,7 +2,7 @@
   "name": "@mixmaxhq/invoke-fraction",
   "version": "2.0.0",
   "description": "Partition invocations across a set of functions based on defined fractions.",
-  "main": "index.js",
+  "main": "dist/node/index.js",
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint . --ext .ts && tsc --noEmit",
@@ -25,7 +25,6 @@
     "routing"
   ],
   "files": [
-    "src",
     "dist"
   ],
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",

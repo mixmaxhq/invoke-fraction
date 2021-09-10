@@ -1,4 +1,4 @@
-import invokeFraction from '../src';
+import invokeFraction from '.';
 
 const tosser =
   (err = new Error('should not be called')) =>

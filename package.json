@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "eslint": "^7.29.0",
-    "eslint-config-mixmax": "^4.15.0",
+    "eslint-config-mixmax": "^5.1.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "ts-jest": "^27.0.3",

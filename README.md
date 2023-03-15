@@ -29,3 +29,9 @@ invokeFraction([
 
 The `invokeFraction` function will return the value returned by the function invoked, so you can use
 this with promises and async/await.
+
+### Publishing a new version
+
+```
+GH_TOKEN=xxx npx semantic-release --no-ci
+```

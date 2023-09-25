@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/mixmaxhq/invoke-fraction#readme",
   "devDependencies": {
-    "@mixmaxhq/prettier-config": "^1.0.0",
+    "@mixmaxhq/prettier-config": "^1.1.0",
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
